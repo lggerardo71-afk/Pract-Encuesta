@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta</title>
+    <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+
+    <div class = "contenedor">
+        
+        <h1>Encuesta para estudiantes</h1>
+
+        <form class="formulario-encuesta">
+
+                <!-- Datos personales -->
+            <fieldset>
+                <legend>Datos personales</legend>
+        
+                <div class="group-campo">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required />
+                </div>
+
+                <div class="group-campo">
+                    <label for="apellido-paterno">Apellido paterno:</label>
+                    <input type="text" id="apellido-paterno" name= "apellido-paterno" required />
+                </div>
+
+                <div class="group-campo">
+                    <label for="apellido-materno">Apellido materno:</label>
+                    <input type="text" id="apellido-materno" name= "apellido-materno" required />
+                 </div>
+
+                <div class="group-campo">
+                    <label for="edad">Edad:</label>
+                    <input type="number" id="edad" name="edad" min="8" max="100" required />
+                </div>
+
+                <div class="group-campo">
+                    <label for="genero">Género:</label>
+                <select id="genero" name="genero" required>
+                    <option value="">Selecciona una opcion</option>
+                    <option value="femenino">Femenino</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="otro">Otro</option>
+                    <option value="prefiero-no-decirlo">Prefiero no decirlo</option>
+                </select>
+            </div>
+
+        </fieldset>
+
+        <!-- Preguntas de selección -->
+
+        <fieldset>
+            <legend>Preguntas</legend>
+
+            <p>¿Cuál es tu sistema operativo favorito?</p>
+
+            <label>
+                <input type="radio" name="os" value="windows" required>
+                Windows
+            </label>
+
+            <label>
+                <input type="radio" name="os" value="macos">
+                MacOS
+            </label>
+
+            <label>
+                <input type="radio" name="os" value="linux">
+                Linux
+            </label>
+
+
+            <p>¿Qué tecnologías utilizas? (Selecciona todas las que correspondan):</p>
+
+            <label>
+                <input type="checkbox" name="tech" value="html">
+                HTML
+            </label>
+
+            <label>
+                <input type="checkbox" name="tech" value="css">
+                CSS
+            </label>
+
+            <label>
+                <input type="checkbox" name="tech" value="javascript">
+                JavaScript
+            </label>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Comentarios Finales</legend>
+
+            <label for="comments">Escribe tus comentarios:</label>
+
+            <textarea id="comments" name="comments" rows="5"></textarea>
+            
+        </fieldset>
+
+        <button type="submit">Enviar</button>
+
+    </form>
+
+</div>
+
+
+
+
+    
+    
+
